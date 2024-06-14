@@ -11,17 +11,18 @@ body {
 }
 
 header {
-  padding-block-end: 1em;
+  padding-block-end: 1rem;
   border-bottom: 1px solid #808080;
 }
 header,
-main {
+main,
+aside {
   max-width: min(900px, calc(100dvw - 3rem));
   margin: auto;
 }
 h2,
 h3 {
-  margin-block: 2em 1em;
+  margin-block: 2rem 1rem;
 }
 p,
 ul {
@@ -36,7 +37,7 @@ sup {
 hr {
   border: none;
   border-top: 1px solid;
-  margin-block: 2em;
+  margin-block: 2rem;
 }
 :link {
   color: #e3032e;
@@ -45,22 +46,25 @@ hr {
   color: #db365d;
 }
 :target {
-  scroll-margin-top: 2em;
+  scroll-margin-top: 2rem;
 }
 #toc {
   background: #fff;
   border-top: 1px solid #808080;
   position: fixed;
   bottom: 0;
-  width: min(40rem, calc(100vw - 3rem));
-  max-height: 50vh;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: min(900px, calc(100dvw - 3rem));
+  max-height: 50dvh;
   overflow-y: auto;
+  cursor: pointer;
 }
 #toc summary {
   position: sticky;
   top: 0;
   background: #fff;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 #toc nav > ul {
   margin-top: 0;
