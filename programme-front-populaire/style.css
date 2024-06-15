@@ -72,3 +72,6 @@ hr {
 #toc nav > ul > li > a {
   font-weight: bold;
 }
+a:hover {
+  color: green;
+}
